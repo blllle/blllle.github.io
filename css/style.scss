@@ -1,309 +1,497 @@
+
 @import "../node_modules/normalize.css/normalize.css";
 
 // Colours:
 
-$blackish: #444;
+// $grey: #444;
+// $dark-salmon: #cb6b52;
+// $light-salmon: #e8aea2;
+// $silver: #cedadd;
+// $cobalt: #1d3774;
+// $dusty-pink: #dac3b6;
+// $dusty-white: #faf9f7;
+// $light-sage: #cfe8d3;
+// $dark-sage: #528065;
+// $steel: #7f868e;
+// $peach: #fda287;
+// $salmon: #f57e6c;
+// $butterscotch: #ffbf40;
+// $pink-rust: #e3afa9;
+// $rust: #c6701f;
+// $mango: #fab62d;
+// $light-pink: #ffeae7;
+// $violet: #d5cdf1;
+// $dark-violet: #60548c;
+// $military-green: #6b784a;
+// $light-maize: #fdfdeb;
+// $maize: #fad543;
+// $dusty-blue: #505b79;
+// $dusty-orange: #cc9c3f;
+// $light-maroon: #8b3946;
+// $duckegg: #d8f9f8;
+// $sea: #36968d;
+// $earth: #9b6e3f;
+// $light-blue: #91bbd9;
+// $dark-blue: #1a3c6c;
+
+
+$light-sea: #d8f9f8;
+$sea: #36968d;
 $dark-salmon: #cb6b52;
-$light-salmon: #e8aea2;
-$silver: #cedadd;
-$cobalt: #1d3774;
-$dusty-pink: #dac3b6;
-$dusty-white: #faf9f7;
+$pink-beige: #dac3b6;
+$light-beige: #faf9f7;
 $light-sage: #cfe8d3;
 $dark-sage: #528065;
-$steel: #7f868e;
-$peach: #fda287;
-$salmon: #f57e6c;
-$butterscotch: #ffbf40;
-$pink-rust: #e3afa9;
-$rust: #c6701f;
-$mango: #fab62d;
-$light-pink: #ffeae7;
-$violet: #d5cdf1;
-$dark-violet: #60548c;
-$military-green: #6b784a;
-$light-maize: #fdfdeb;
+$marigold-salmon: #fdbd02;
+$salmon-marigold: #f57e6c;
+$kahki-sand: #f8eecb;
+$sky-sand-grey: #d2edff;
+$sand-sky-kahki: #d3a05c;
+$blush: #f6a79a;
+$dark: #262c44;
+$green-salmon: #6b784a;
+$salmon-green: #e8aea2;
+$grey-sky: #c4cee2;
+$navy-beige: #293a65;
+$beige-navy: #e7c4a2;
 $maize: #fad543;
-$dusty-blue: #505b79;
-$dusty-orange: #cc9c3f;
-$light-maroon: #8b3946;
-$duckegg: #d8f9f8;
-$sea: #36968d;
-$earth: #9b6e3f;
-$light-blue: #91bbd9;
-$dark-blue: #1a3c6c;
+$light-maize: #fdfdeb;
+$lilac-violet: #efe8ff;
+$violet-lilac: #60548c;
+$rouge-rose: #94122f;
+$rose-rouge: #fbd7cb;
+$pink-steel: #fda287;
+$steel-pink: #7f868e;
+$peach-sand: #d88e5f;
+$sand-peach: #e8e1ce;
+$slate-mauve: #44475e;
+$mauve-slate: #cabec2;
+$baby-blue: #9ed6ff;
+$baby-pink: #ffe8e3;
+$cobalt-silver: #1d3774;
+$silver-cobolt: #cedadd;
+$ice-marigold: #d9fffa;
+$green-grey: #dceedc;
+$grey-green: #92b2bc;
+$sand-wine: #fbdcb6;
+$wine-sand: #74233e;
+$green-blue: #145c60;
+$blue-green: #d7e7e2;
+$baby-rose: #f5e3d7;
+$rose-baby: #cf6e72;
+$dusk-dirt: #505b79;
+$dirt-dusk: #cc9c3f;
+$pink-dust: #e3afa9;
+$dust-pink: #c6701f;
+
+
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #ffffff;
-  color: $blackish;
-  margin: 40px auto 40px auto;
-}
-
-h1 {
-  font-size: 40px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 22px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-header {
-  box-sizing: border-box;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  z-index: 999;
-}
-
-nav img {
-  width: 50px;
-}
-
-.logo {
-  img {
-    width: 250px;
-    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 40px auto 40px auto;
   }
+
+ 
   h1 {
-    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
   }
+  
+  h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header {
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
 }
 
-.intro {
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 200px;
-}
 
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-evenly;
-}
+  nav img {
+  width: 50px;
+  }
+  
 
-.card-base {
-  width: 200px;
-  height: 250px;
-  padding: 20px;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.2),
-    0px 6px 18px 0px rgba(0, 0, 0, 0.05);
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
-  transform: translateY(0px);
-}
+  .logo {
 
-.front {
-  position: relative;
-  margin: 15px;
-  cursor: pointer;
-}
+    img {
+      width: 250px;
+      display:inline-block;
+    }
+    h1 {
+      display:inline-block;
+    }
+  }
 
-.back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: 2;
-  p {
-    bottom: 30px;
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 200px;
+  }
+  
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:space-evenly;
+  }
+  
+  .card-base {
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.20), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+    transform: translateY(0px);
+  }
+
+  .front {
+    position: relative;
+    margin: 15px;
+    cursor: pointer;
+  }
+  
+  .back {
     position: absolute;
-    right: 30px;
-    left: initial;
-    text-align: right;
+    top:0;
+    left:0;
+    opacity: 0;
+    z-index: 2;
+    p {
+      bottom: 30px;
+      position: absolute;
+      right: 30px;
+      left: initial;
+      text-align: right; 
+    }
   }
-}
 
-.front:hover {
-  box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.2),
-    0px 30px 25px 0px rgba(0, 0, 0, 0.05);
-  transform: translateY(-5px);
-}
-
-.front:hover .back {
-  opacity: 1;
-}
-
-.about a {
-  color: lightpink;
-  text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  color: $blackish;
-  padding-top: 50px;
-  font-size: 14px;
-}
-
-footer a {
-  color: lightpink;
-  text-decoration: none;
-}
-
-.about-background {
-  background: $light-salmon;
-}
-
-.about-content {
-  width: 400px;
-  text-align: center;
-  padding: 50px;
-  color: $dark-salmon;
-}
-
-/* Colors */
-
-.front-1 {
-  background-color: $dark-salmon;
-  color: $light-salmon;
-  .back {
-    color: $dark-salmon;
-    background-color: $light-salmon;
+  .front:hover {
+    box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.20), 0px 30px 25px 0px rgba(0, 0, 0, 0.05);
+    transform: translateY(-5px);
   }
-}
+  
+  .front:hover .back {
+    opacity: 1;
+  }
 
-.front-2 {
-  background-color: $silver;
-  color: $cobalt;
-  .back {
-    color: $silver;
-    background-color: $cobalt;
+  .about a {
+    color: lightpink;
+    text-decoration: none;
   }
-}
 
-.front-3 {
-  background-color: $dusty-pink;
-  color: $dusty-white;
-  .back {
-    color: $dusty-pink;
-    background-color: $dusty-white;
+  footer {
+    text-align: center;
+    color: #dedede;
+    padding-top: 50px;
+    font-size: 14px;
   }
-}
+  
+  footer a {
+    color: lightpink;
+    text-decoration: none;
+  }
+  
+  .modal {
+    display: none;
+  }
+  
+  .modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFDDC0;
+    z-index: 20;
+  }
+  
+  .modal-close {
+    font-family: sans-serif;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 20px 25px 20px 25px;
+    z-index: 30;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .modal-content {
+    padding: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    max-width: 400px;
+    background: transparent;
+    text-align: center;
+    color: #FFA37E;
+  }
+  
 
-.front-4 {
-  background-color: $light-sage;
-  color: $dark-sage;
-  .back {
-    color: $light-sage;
-    background-color: $dark-sage;
-  }
-}
 
-.front-5 {
-  background-color: $steel;
-  color: $peach;
-  .back {
-    color: $steel;
-    background-color: $peach;
-  }
-}
 
-.front-6 {
-  background-color: $mango;
-  color: $light-pink;
-  .back {
-    color: $mango;
-    background-color: $light-pink;
+  
+  
+  /* Colors */
+  
+  .front-1 {
+    background-color: $light-sea;
+    color: $sea;
+    .back {
+      color: $light-sea;
+      background-color: $sea;
+    }
   }
-}
 
-.front-7 {
-  background-color: $salmon;
-  color: $butterscotch;
-  .back {
-    color: $salmon;
-    background-color: $butterscotch;
+  .front-2 {
+    background-color:$dark-salmon;
+    color: $salmon-green;
+    .back {
+      color:   $dark-salmon;
+      background-color: $salmon-green;
+    }
   }
-}
 
-.front-8 {
-  background-color: $violet;
-  color: $dark-violet;
-  .back {
-    color: $violet;
-    background-color: $dark-violet;
+  .front-3 {
+    background-color:$pink-beige;
+    color: $light-beige;
+    .back {
+      color:$pink-beige;
+      background-color: $light-beige;
+    }
   }
-}
-.front-9 {
-  background-color: $pink-rust;
-  color: $rust;
-  .back {
-    color: $pink-rust;
-    background-color: $rust;
+
+
+  .front-4 {
+    background-color: $light-sage;
+    color: $dark-sage;
+    .back {
+      color: $light-sage;
+      background-color: $dark-sage;
+    }
   }
-}
-.front-10 {
-  background-color: $military-green;
-  color: $light-salmon;
-  .back {
-    color: $military-green;
-    background-color: $light-salmon;
+
+  .front-5 {
+    background-color: $marigold-salmon;
+    color: $salmon-marigold;
+    .back {
+      color: $marigold-salmon;
+      background-color: $salmon-marigold;
+    }
   }
-}
-.front-11 {
-  background-color: $light-maize;
-  color: $maize;
-  .back {
-    color: $light-maize;
+
+  .front-6 {
+    background-color: $kahki-sand;
+    color: $sand-sky-kahki;
+    .back {
+      color: $kahki-sand;
+      background-color: $sand-sky-kahki;
+    }
+  }
+  .front-7 {
+    background-color: $blush;
+    color: $dark;
+    .back {
+      color: $blush;
+      background-color: $dark;
+    }
+  }
+  .front-8 {
+    background-color: $sky-sand-grey;
+    color: $sand-sky-kahki;
+    .back {
+      color: $sky-sand-grey;
+      background-color: $sand-sky-kahki;
+    }
+  }
+
+
+  .front-9 {
+    background-color:$green-salmon;
+    color: $salmon-green;
+    .back {
+      color:$green-salmon;
+      background-color: $salmon-green;
+    }
+  }
+  .front-10 {
+    background-color: $grey-sky;
+    color: $dusk-dirt;
+    .back {
+      color: $grey-sky;
+      background-color: $dusk-dirt;
+    }
+  }
+  .front-11 {
     background-color: $maize;
+    color: $light-maize;
+    .back {
+      color: $maize;
+      background-color: $light-maize;
+    }
   }
-}
-.front-12 {
-  background-color: $dusty-blue;
-  color: $dusty-orange;
-  .back {
-    color: $dusty-blue;
-    background-color: $dusty-orange;
+  .front-12 {
+    background-color: $navy-beige;
+    color: $beige-navy;
+    .back {
+      color: $navy-beige;
+      background-color: $beige-navy;
+    }
   }
-}
-.front-13 {
-  background-color: $duckegg;
-  color: $sea;
-  .back {
-    color: $duckegg;
-    background-color: $sea;
-  }
-}
-.front-14 {
-  background-color: $light-maroon;
-  color: $dusty-pink;
-  .back {
-    color: $light-maroon;
-    background-color: $dusty-pink;
-  }
-}
 
-.front-15 {
-  background-color: $light-pink;
-  color: $earth;
-  .back {
-    color: $light-pink;
-    background-color: $earth;
+  .front-13 {
+    background-color: $lilac-violet;
+    color: $violet-lilac;
+    .back {
+      color: $lilac-violet;
+      background-color: $violet-lilac;
+    }
   }
-}
-.front-16 {
-  background-color: $light-blue;
-  color: $dark-blue;
-  .back {
-    color: $light-blue;
-    background-color: $dark-blue;
+  .front-14 {
+    background-color: $rouge-rose;
+    color: $rose-rouge;
+    .back {
+      color: $rouge-rose;
+      background-color: $rose-rouge;
+    }
   }
-}
+
+
+  .front-15 {
+    background-color:$pink-steel;
+    color: $steel-pink;
+    .back {
+      color:$pink-steel;
+      background-color: $steel-pink;
+    }
+  }
+  .front-16 {
+    background-color: $baby-blue;
+    color: $baby-pink;
+    .back {
+      color: $baby-blue;
+      background-color: $baby-pink;
+    }
+  }
+
+  .front-17 {
+    background-color: $slate-mauve;
+    color: $mauve-slate;
+    .back {
+      color: $slate-mauve;
+      background-color: $mauve-slate;
+    }
+  }
+  .front-18 {
+    background-color: $peach-sand;
+    color: $sand-peach;
+    .back {
+      color: $peach-sand;
+      background-color: $sand-peach;
+    }
+  }
+  .front-19 {
+    background-color: $cobalt-silver;
+    color: $silver-cobolt;
+    .back {
+      color: $cobalt-silver;
+      background-color: $silver-cobolt;
+    }
+  }
+  .front-20 {
+    background-color: $marigold-salmon;
+    color: $ice-marigold;
+    .back {
+      color: $marigold-salmon;
+      background-color: $ice-marigold;
+    }
+  }
+  .front-21 {
+    background-color: $green-grey;
+    color: $grey-green;
+    .back {
+      color: $green-grey;
+      background-color: $grey-green;
+    }
+  }
+  .front-22 {
+    background-color: $sand-wine;
+    color: $wine-sand;
+    .back {
+      color: $sand-wine;
+      background-color: $wine-sand;
+    }
+  }
+  .front-23 {
+    background-color: $green-blue;
+    color: $blue-green;
+    .back {
+      color: $green-blue;
+      background-color: $blue-green;
+    }
+  }
+  .front-24 {
+    background-color: $baby-rose;
+    color: $rose-baby;
+    .back {
+      color: $baby-rose;
+      background-color: $rose-baby;
+    }
+  }
+  .front-25 {
+    background-color: $dusk-dirt;
+    color: $dirt-dusk;
+    .back {
+      color: $dusk-dirt;
+      background-color: $dirt-dusk;
+    }
+  }
+  .front-26 {
+    background-color: $pink-dust;
+    color: $dust-pink;
+    .back {
+      color: $pink-dust;
+      background-color: $dust-pink;
+    }
+  }
+  .front-27 {
+    background-color: $marigold-salmon;
+    color: $ice-marigold;
+    .back {
+      color: $marigold-salmon;
+      background-color: $ice-marigold;
+    }
+  }
+  .front-28 {
+    background-color: $marigold-salmon;
+    color: $ice-marigold;
+    .back {
+      color: $marigold-salmon;
+      background-color: $ice-marigold;
+    }
+  }

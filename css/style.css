@@ -1,10 +1,10 @@
-@import url(/Users/billiegray/Sites/blllle.github.io/node_modules/normalize.css/normalize.css);
+@import url(/Users/TravsMac/blllle.github.io/node_modules/normalize.css/normalize.css);
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.5;
   background-color: #ffffff;
-  color: #444;
+  color: #333333;
   margin: 40px auto 40px auto;
 }
 
@@ -134,7 +134,7 @@ nav img {
 
 footer {
   text-align: center;
-  color: #444;
+  color: #dedede;
   padding-top: 50px;
   font-size: 14px;
 }
@@ -144,36 +144,65 @@ footer a {
   text-decoration: none;
 }
 
-.about-background {
-  background: #e8aea2;
+.modal {
+  display: none;
 }
 
-.about-content {
-  width: 400px;
-  text-align: center;
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFDDC0;
+  z-index: 20;
+}
+
+.modal-close {
+  font-family: sans-serif;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 20px 25px 20px 25px;
+  z-index: 30;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+.modal-content {
   padding: 50px;
-  color: #cb6b52;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 30;
+  max-width: 400px;
+  background: transparent;
+  text-align: center;
+  color: #FFA37E;
 }
 
 /* Colors */
 .front-1 {
+  background-color: #d8f9f8;
+  color: #36968d;
+}
+
+.front-1 .back {
+  color: #d8f9f8;
+  background-color: #36968d;
+}
+
+.front-2 {
   background-color: #cb6b52;
   color: #e8aea2;
 }
 
-.front-1 .back {
+.front-2 .back {
   color: #cb6b52;
   background-color: #e8aea2;
-}
-
-.front-2 {
-  background-color: #cedadd;
-  color: #1d3774;
-}
-
-.front-2 .back {
-  color: #cedadd;
-  background-color: #1d3774;
 }
 
 .front-3 {
@@ -197,122 +226,242 @@ footer a {
 }
 
 .front-5 {
-  background-color: #7f868e;
-  color: #fda287;
+  background-color: #fdbd02;
+  color: #f57e6c;
 }
 
 .front-5 .back {
-  color: #7f868e;
-  background-color: #fda287;
+  color: #fdbd02;
+  background-color: #f57e6c;
 }
 
 .front-6 {
-  background-color: #fab62d;
-  color: #ffeae7;
+  background-color: #f8eecb;
+  color: #d3a05c;
 }
 
 .front-6 .back {
-  color: #fab62d;
-  background-color: #ffeae7;
+  color: #f8eecb;
+  background-color: #d3a05c;
 }
 
 .front-7 {
-  background-color: #f57e6c;
-  color: #ffbf40;
+  background-color: #f6a79a;
+  color: #262c44;
 }
 
 .front-7 .back {
-  color: #f57e6c;
-  background-color: #ffbf40;
+  color: #f6a79a;
+  background-color: #262c44;
 }
 
 .front-8 {
-  background-color: #d5cdf1;
-  color: #60548c;
+  background-color: #d2edff;
+  color: #d3a05c;
 }
 
 .front-8 .back {
-  color: #d5cdf1;
-  background-color: #60548c;
+  color: #d2edff;
+  background-color: #d3a05c;
 }
 
 .front-9 {
-  background-color: #e3afa9;
-  color: #c6701f;
-}
-
-.front-9 .back {
-  color: #e3afa9;
-  background-color: #c6701f;
-}
-
-.front-10 {
   background-color: #6b784a;
   color: #e8aea2;
 }
 
-.front-10 .back {
+.front-9 .back {
   color: #6b784a;
   background-color: #e8aea2;
 }
 
+.front-10 {
+  background-color: #c4cee2;
+  color: #505b79;
+}
+
+.front-10 .back {
+  color: #c4cee2;
+  background-color: #505b79;
+}
+
 .front-11 {
-  background-color: #fdfdeb;
-  color: #fad543;
+  background-color: #fad543;
+  color: #fdfdeb;
 }
 
 .front-11 .back {
-  color: #fdfdeb;
-  background-color: #fad543;
+  color: #fad543;
+  background-color: #fdfdeb;
 }
 
 .front-12 {
+  background-color: #293a65;
+  color: #e7c4a2;
+}
+
+.front-12 .back {
+  color: #293a65;
+  background-color: #e7c4a2;
+}
+
+.front-13 {
+  background-color: #efe8ff;
+  color: #60548c;
+}
+
+.front-13 .back {
+  color: #efe8ff;
+  background-color: #60548c;
+}
+
+.front-14 {
+  background-color: #94122f;
+  color: #fbd7cb;
+}
+
+.front-14 .back {
+  color: #94122f;
+  background-color: #fbd7cb;
+}
+
+.front-15 {
+  background-color: #fda287;
+  color: #7f868e;
+}
+
+.front-15 .back {
+  color: #fda287;
+  background-color: #7f868e;
+}
+
+.front-16 {
+  background-color: #9ed6ff;
+  color: #ffe8e3;
+}
+
+.front-16 .back {
+  color: #9ed6ff;
+  background-color: #ffe8e3;
+}
+
+.front-17 {
+  background-color: #44475e;
+  color: #cabec2;
+}
+
+.front-17 .back {
+  color: #44475e;
+  background-color: #cabec2;
+}
+
+.front-18 {
+  background-color: #d88e5f;
+  color: #e8e1ce;
+}
+
+.front-18 .back {
+  color: #d88e5f;
+  background-color: #e8e1ce;
+}
+
+.front-19 {
+  background-color: #1d3774;
+  color: #cedadd;
+}
+
+.front-19 .back {
+  color: #1d3774;
+  background-color: #cedadd;
+}
+
+.front-20 {
+  background-color: #fdbd02;
+  color: #d9fffa;
+}
+
+.front-20 .back {
+  color: #fdbd02;
+  background-color: #d9fffa;
+}
+
+.front-21 {
+  background-color: #dceedc;
+  color: #92b2bc;
+}
+
+.front-21 .back {
+  color: #dceedc;
+  background-color: #92b2bc;
+}
+
+.front-22 {
+  background-color: #fbdcb6;
+  color: #74233e;
+}
+
+.front-22 .back {
+  color: #fbdcb6;
+  background-color: #74233e;
+}
+
+.front-23 {
+  background-color: #145c60;
+  color: #d7e7e2;
+}
+
+.front-23 .back {
+  color: #145c60;
+  background-color: #d7e7e2;
+}
+
+.front-24 {
+  background-color: #f5e3d7;
+  color: #cf6e72;
+}
+
+.front-24 .back {
+  color: #f5e3d7;
+  background-color: #cf6e72;
+}
+
+.front-25 {
   background-color: #505b79;
   color: #cc9c3f;
 }
 
-.front-12 .back {
+.front-25 .back {
   color: #505b79;
   background-color: #cc9c3f;
 }
 
-.front-13 {
-  background-color: #d8f9f8;
-  color: #36968d;
+.front-26 {
+  background-color: #e3afa9;
+  color: #c6701f;
 }
 
-.front-13 .back {
-  color: #d8f9f8;
-  background-color: #36968d;
+.front-26 .back {
+  color: #e3afa9;
+  background-color: #c6701f;
 }
 
-.front-14 {
-  background-color: #8b3946;
-  color: #dac3b6;
+.front-27 {
+  background-color: #fdbd02;
+  color: #d9fffa;
 }
 
-.front-14 .back {
-  color: #8b3946;
-  background-color: #dac3b6;
+.front-27 .back {
+  color: #fdbd02;
+  background-color: #d9fffa;
 }
 
-.front-15 {
-  background-color: #ffeae7;
-  color: #9b6e3f;
+.front-28 {
+  background-color: #fdbd02;
+  color: #d9fffa;
 }
 
-.front-15 .back {
-  color: #ffeae7;
-  background-color: #9b6e3f;
-}
-
-.front-16 {
-  background-color: #91bbd9;
-  color: #1a3c6c;
-}
-
-.front-16 .back {
-  color: #91bbd9;
-  background-color: #1a3c6c;
+.front-28 .back {
+  color: #fdbd02;
+  background-color: #d9fffa;
 }
 /*# sourceMappingURL=style.css.map */
