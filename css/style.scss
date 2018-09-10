@@ -1,0 +1,337 @@
+@import "../node_modules/normalize.css/normalize.css";
+
+// Colours:
+
+$blackish: #444;
+$dark-salmon: #cb6b52;
+$light-salmon: #e8aea2;
+$silver: #cedadd;
+$cobalt: #1d3774;
+$dusty-pink: #dac3b6;
+$dusty-white: #faf9f7;
+$light-sage: #cfe8d3;
+$dark-sage: #528065;
+$steel: #7f868e;
+$peach: #fda287;
+$salmon: #f57e6c;
+$butterscotch: #ffbf40;
+$pink-rust: #e3afa9;
+$rust: #c6701f;
+$mango: #fab62d;
+$light-pink: #ffeae7;
+$violet: #d5cdf1;
+$dark-violet: #60548c;
+$military-green: #6b784a;
+$light-maize: #fdfdeb;
+$maize: #fad543;
+$dusty-blue: #505b79;
+$dusty-orange: #cc9c3f;
+$light-maroon: #8b3946;
+$duckegg: #d8f9f8;
+$sea: #36968d;
+$earth: #9b6e3f;
+$light-blue: #91bbd9;
+$dark-blue: #1a3c6c;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: $blackish;
+  margin: 40px auto 40px auto;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header {
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 999;
+}
+
+nav img {
+  width: 50px;
+}
+
+.logo {
+  img {
+    width: 250px;
+    display: inline-block;
+  }
+  h1 {
+    display: inline-block;
+  }
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 200px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+}
+
+.card-base {
+  width: 200px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.2),
+    0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+  transform: translateY(0px);
+}
+
+.front {
+  position: relative;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  p {
+    bottom: 30px;
+    position: absolute;
+    right: 30px;
+    left: initial;
+    text-align: right;
+  }
+}
+
+.front:hover {
+  box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.2),
+    0px 30px 25px 0px rgba(0, 0, 0, 0.05);
+  transform: translateY(-5px);
+}
+
+.front:hover .back {
+  opacity: 1;
+}
+
+.about a {
+  color: lightpink;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  color: $blackish;
+  padding-top: 50px;
+  font-size: 14px;
+}
+
+footer a {
+  color: lightpink;
+  text-decoration: none;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffddc0;
+  z-index: 20;
+}
+
+.modal-close {
+  font-family: sans-serif;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 20px 25px 20px 25px;
+  z-index: 30;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+.modal-content {
+  padding: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  max-width: 400px;
+  background: transparent;
+  text-align: center;
+  color: #ffa37e;
+}
+
+/* Colors */
+
+.front-1 {
+  background-color: $dark-salmon;
+  color: $light-salmon;
+  .back {
+    color: $dark-salmon;
+    background-color: $light-salmon;
+  }
+}
+
+.front-2 {
+  background-color: $silver;
+  color: $cobalt;
+  .back {
+    color: $silver;
+    background-color: $cobalt;
+  }
+}
+
+.front-3 {
+  background-color: $dusty-pink;
+  color: $dusty-white;
+  .back {
+    color: $dusty-pink;
+    background-color: $dusty-white;
+  }
+}
+
+.front-4 {
+  background-color: $light-sage;
+  color: $dark-sage;
+  .back {
+    color: $light-sage;
+    background-color: $dark-sage;
+  }
+}
+
+.front-5 {
+  background-color: $steel;
+  color: $peach;
+  .back {
+    color: $steel;
+    background-color: $peach;
+  }
+}
+
+.front-6 {
+  background-color: $mango;
+  color: $light-pink;
+  .back {
+    color: $mango;
+    background-color: $light-pink;
+  }
+}
+
+.front-7 {
+  background-color: $salmon;
+  color: $butterscotch;
+  .back {
+    color: $salmon;
+    background-color: $butterscotch;
+  }
+}
+
+.front-8 {
+  background-color: $violet;
+  color: $dark-violet;
+  .back {
+    color: $violet;
+    background-color: $dark-violet;
+  }
+}
+.front-9 {
+  background-color: $pink-rust;
+  color: $rust;
+  .back {
+    color: $pink-rust;
+    background-color: $rust;
+  }
+}
+.front-10 {
+  background-color: $military-green;
+  color: $light-salmon;
+  .back {
+    color: $military-green;
+    background-color: $light-salmon;
+  }
+}
+.front-11 {
+  background-color: $light-maize;
+  color: $maize;
+  .back {
+    color: $light-maize;
+    background-color: $maize;
+  }
+}
+.front-12 {
+  background-color: $dusty-blue;
+  color: $dusty-orange;
+  .back {
+    color: $dusty-blue;
+    background-color: $dusty-orange;
+  }
+}
+.front-13 {
+  background-color: $duckegg;
+  color: $sea;
+  .back {
+    color: $duckegg;
+    background-color: $sea;
+  }
+}
+.front-14 {
+  background-color: $light-maroon;
+  color: $dusty-pink;
+  .back {
+    color: $light-maroon;
+    background-color: $dusty-pink;
+  }
+}
+
+.front-15 {
+  background-color: $light-pink;
+  color: $earth;
+  .back {
+    color: $light-pink;
+    background-color: $earth;
+  }
+}
+.front-16 {
+  background-color: $light-blue;
+  color: $dark-blue;
+  .back {
+    color: $light-blue;
+    background-color: $dark-blue;
+  }
+}

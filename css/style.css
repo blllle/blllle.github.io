@@ -1,0 +1,347 @@
+@import url(/Users/billiegray/Sites/Boterham/node_modules/normalize.css/normalize.css);
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #444;
+  margin: 40px auto 40px auto;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 999;
+}
+
+nav img {
+  width: 50px;
+}
+
+.logo img {
+  width: 250px;
+  display: inline-block;
+}
+
+.logo h1 {
+  display: inline-block;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 200px;
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card-base {
+  width: 200px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.2), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.2), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.5s ease, -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease, -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.front {
+  position: relative;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+.back p {
+  bottom: 30px;
+  position: absolute;
+  right: 30px;
+  left: initial;
+  text-align: right;
+}
+
+.front:hover {
+  -webkit-box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.2), 0px 30px 25px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.2), 0px 30px 25px 0px rgba(0, 0, 0, 0.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.front:hover .back {
+  opacity: 1;
+}
+
+.about a {
+  color: lightpink;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  color: #444;
+  padding-top: 50px;
+  font-size: 14px;
+}
+
+footer a {
+  color: lightpink;
+  text-decoration: none;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffddc0;
+  z-index: 20;
+}
+
+.modal-close {
+  font-family: sans-serif;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 20px 25px 20px 25px;
+  z-index: 30;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+.modal-content {
+  padding: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 30;
+  max-width: 400px;
+  background: transparent;
+  text-align: center;
+  color: #ffa37e;
+}
+
+/* Colors */
+.front-1 {
+  background-color: #cb6b52;
+  color: #e8aea2;
+}
+
+.front-1 .back {
+  color: #cb6b52;
+  background-color: #e8aea2;
+}
+
+.front-2 {
+  background-color: #cedadd;
+  color: #1d3774;
+}
+
+.front-2 .back {
+  color: #cedadd;
+  background-color: #1d3774;
+}
+
+.front-3 {
+  background-color: #dac3b6;
+  color: #faf9f7;
+}
+
+.front-3 .back {
+  color: #dac3b6;
+  background-color: #faf9f7;
+}
+
+.front-4 {
+  background-color: #cfe8d3;
+  color: #528065;
+}
+
+.front-4 .back {
+  color: #cfe8d3;
+  background-color: #528065;
+}
+
+.front-5 {
+  background-color: #7f868e;
+  color: #fda287;
+}
+
+.front-5 .back {
+  color: #7f868e;
+  background-color: #fda287;
+}
+
+.front-6 {
+  background-color: #fab62d;
+  color: #ffeae7;
+}
+
+.front-6 .back {
+  color: #fab62d;
+  background-color: #ffeae7;
+}
+
+.front-7 {
+  background-color: #f57e6c;
+  color: #ffbf40;
+}
+
+.front-7 .back {
+  color: #f57e6c;
+  background-color: #ffbf40;
+}
+
+.front-8 {
+  background-color: #d5cdf1;
+  color: #60548c;
+}
+
+.front-8 .back {
+  color: #d5cdf1;
+  background-color: #60548c;
+}
+
+.front-9 {
+  background-color: #e3afa9;
+  color: #c6701f;
+}
+
+.front-9 .back {
+  color: #e3afa9;
+  background-color: #c6701f;
+}
+
+.front-10 {
+  background-color: #6b784a;
+  color: #e8aea2;
+}
+
+.front-10 .back {
+  color: #6b784a;
+  background-color: #e8aea2;
+}
+
+.front-11 {
+  background-color: #fdfdeb;
+  color: #fad543;
+}
+
+.front-11 .back {
+  color: #fdfdeb;
+  background-color: #fad543;
+}
+
+.front-12 {
+  background-color: #505b79;
+  color: #cc9c3f;
+}
+
+.front-12 .back {
+  color: #505b79;
+  background-color: #cc9c3f;
+}
+
+.front-13 {
+  background-color: #d8f9f8;
+  color: #36968d;
+}
+
+.front-13 .back {
+  color: #d8f9f8;
+  background-color: #36968d;
+}
+
+.front-14 {
+  background-color: #8b3946;
+  color: #dac3b6;
+}
+
+.front-14 .back {
+  color: #8b3946;
+  background-color: #dac3b6;
+}
+
+.front-15 {
+  background-color: #ffeae7;
+  color: #9b6e3f;
+}
+
+.front-15 .back {
+  color: #ffeae7;
+  background-color: #9b6e3f;
+}
+
+.front-16 {
+  background-color: #91bbd9;
+  color: #1a3c6c;
+}
+
+.front-16 .back {
+  color: #91bbd9;
+  background-color: #1a3c6c;
+}
+/*# sourceMappingURL=style.css.map */
