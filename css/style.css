@@ -1,4 +1,4 @@
-@import url(/Users/TravsMac/blllle.github.io/node_modules/normalize.css/normalize.css);
+@import url(/Users/billiegray/Sites/blllle.github.io/node_modules/normalize.css/normalize.css);
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
@@ -144,44 +144,15 @@ footer a {
   text-decoration: none;
 }
 
-.modal {
-  display: none;
+.about-background {
+  background: #ffddc0;
 }
 
-.modal-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #FFDDC0;
-  z-index: 20;
-}
-
-.modal-close {
-  font-family: sans-serif;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  padding: 20px 25px 20px 25px;
-  z-index: 30;
-  cursor: pointer;
-  color: white;
-  font-size: 18px;
-}
-
-.modal-content {
+.about-content {
+  margin-top: 100px;
   padding: 50px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 30;
   max-width: 400px;
-  background: transparent;
-  text-align: center;
-  color: #FFA37E;
+  color: #ffa37e;
 }
 
 /* Colors */
