@@ -1,6 +1,6 @@
 ### Hallo,
 
-(images/preview.png)
+![preview](images/preview.png)
 
 I created this site as a fun way to help me learn Dutch.
 
