@@ -2,90 +2,117 @@
 
 // Colours:
 
-// $grey: #444;
+// $light-sea: #d8f9f8;
+// $sea: #36968d;
 // $dark-salmon: #cb6b52;
-// $light-salmon: #e8aea2;
-// $silver: #cedadd;
-// $cobalt: #1d3774;
-// $dusty-pink: #dac3b6;
-// $dusty-white: #faf9f7;
+// $pink-beige: #dac3b6;
+// $light-beige: #faf9f7;
 // $light-sage: #cfe8d3;
 // $dark-sage: #528065;
-// $steel: #7f868e;
-// $peach: #fda287;
-// $salmon: #f57e6c;
-// $butterscotch: #ffbf40;
-// $pink-rust: #e3afa9;
-// $rust: #c6701f;
-// $mango: #fab62d;
-// $light-pink: #ffeae7;
-// $violet: #d5cdf1;
-// $dark-violet: #60548c;
-// $military-green: #6b784a;
-// $light-maize: #fdfdeb;
+// $marigold-salmon: #fdbd02;
+// $salmon-marigold: #f57e6c;
+// $kahki-sand: #f8eecb;
+// $sky-sand-grey: #d2edff;
+// $sand-sky-kahki: #d3a05c;
+// $blush: #f6a79a;
+// $dark: #262c44;
+// $green-salmon: #6b784a;
+// $salmon-green: #e8aea2;
+// $grey-sky: #c4cee2;
+// $navy-beige: #293a65;
+// $beige-navy: #e7c4a2;
 // $maize: #fad543;
-// $dusty-blue: #505b79;
-// $dusty-orange: #cc9c3f;
-// $light-maroon: #8b3946;
-// $duckegg: #d8f9f8;
-// $sea: #36968d;
-// $earth: #9b6e3f;
-// $light-blue: #91bbd9;
-// $dark-blue: #1a3c6c;
+// $light-maize: #fdfdeb;
+// $lilac-violet: #efe8ff;
+// $violet-lilac: #60548c;
+// $rouge-rose: #94122f;
+// $rose-rouge: #fbd7cb;
+// $pink-steel: #fda287;
+// $steel-pink: #7f868e;
+// $peach-sand: #d88e5f;
+// $sand-peach: #e8e1ce;
+// $slate-mauve: #44475e;
+// $mauve-slate: #cabec2;
+// $baby-blue: #9ed6ff;
+// $baby-pink: #ffe8e3;
+// $cobalt-silver: #1d3774;
+// $silver-cobolt: #cedadd;
+// $ice-marigold: #d9fffa;
+// $green-grey: #dceedc;
+// $grey-green: #92b2bc;
+// $sand-wine: #fbdcb6;
+// $wine-sand: #74233e;
+// $green-blue: #145c60;
+// $blue-green: #d7e7e2;
+// $baby-rose: #f5e3d7;
+// $rose-baby: #cf6e72;
+// $dusk-dirt: #505b79;
+// $dirt-dusk: #cc9c3f;
+// $pink-dust: #e3afa9;
+// $dust-pink: #c6701f;
 
-$light-sea: #d8f9f8;
-$sea: #36968d;
+$light-teal: #d8f9f8;
+$dark-teal: #549492;
+$light-salmone: #ffc2b3;
 $dark-salmon: #cb6b52;
-$pink-beige: #dac3b6;
-$light-beige: #faf9f7;
-$light-sage: #cfe8d3;
-$dark-sage: #528065;
-$marigold-salmon: #fdbd02;
-$salmon-marigold: #f57e6c;
-$kahki-sand: #f8eecb;
-$sky-sand-grey: #d2edff;
-$sand-sky-kahki: #d3a05c;
-$blush: #f6a79a;
-$dark: #262c44;
-$green-salmon: #6b784a;
-$salmon-green: #e8aea2;
-$grey-sky: #c4cee2;
-$navy-beige: #293a65;
-$beige-navy: #e7c4a2;
-$maize: #fad543;
-$light-maize: #fdfdeb;
-$lilac-violet: #efe8ff;
-$violet-lilac: #60548c;
-$rouge-rose: #94122f;
-$rose-rouge: #fbd7cb;
-$pink-steel: #fda287;
-$steel-pink: #7f868e;
-$peach-sand: #d88e5f;
-$sand-peach: #e8e1ce;
-$slate-mauve: #44475e;
-$mauve-slate: #cabec2;
-$baby-blue: #9ed6ff;
-$baby-pink: #ffe8e3;
-$cobalt-silver: #1d3774;
-$silver-cobolt: #cedadd;
-$ice-marigold: #d9fffa;
-$green-grey: #dceedc;
-$grey-green: #92b2bc;
-$sand-wine: #fbdcb6;
-$wine-sand: #74233e;
-$green-blue: #145c60;
-$blue-green: #d7e7e2;
-$baby-rose: #f5e3d7;
-$rose-baby: #cf6e72;
-$dusk-dirt: #505b79;
-$dirt-dusk: #cc9c3f;
-$pink-dust: #e3afa9;
-$dust-pink: #c6701f;
+$sun-white: #fffcde;
+$sun-yellow: #ffe019;
+$light-slate: #8d9fcc;
+$dark-slate: #213873;
+$light-violet: #d5cdf1;
+$dark-violet: #7263a6;
+$light-grey-green: #c1e6d0;
+$dark-grey-green: #6b997e;
+$light-baby-blue: #99d5ff;
+$dark-baby-blue: #45a3e6;
+$pink-pale: #ffd4d5;
+$pink-dusty: #cf6e72;
+$light-tan: #fbdcb6;
+$dark-tan: #e09a43;
+$light-earth: #dac3b6;
+$earth: #a66a47;
+$light-terracotta: #fcaf97;
+$dark-terracotta: #b36e59;
+$light-forest: #89c69a;
+$forest: #3d7b4e;
+$faded-pink: #e3bfcb;
+$dusty-pink: #966072;
+$pale-grey-blue: #bfe6ff;
+$dark-grey-blue: #6b8799;
+$dusty-rose: #cc8f9c;
+$dark-rose: #a84354;
+$silver-grey: #c4cee2;
+$dark-silver-grey: #6d727d;
+$pale-salmon: #ffaea2;
+$dark-pale-salmon: #c26253;
+$light-sand: #ffe7a6;
+$sand: #e6c670;
+$light-slate-grey: #cedadd;
+$slate-grey: #607378;
+$light-pinkish-tan: #fadede;
+$pinkish-tan: #e6968c;
+$light-dusk: #abcaef;
+$dusk-blue: #254a94;
+$light-grey-teal: #bae1db;
+$grey-teal: #598d85;
+$peach: #ffd6bd;
+$dark-peach: #d88e5f;
+$greyblue: #7db1b3;
+$dark-greyblue: #1f6266;
+$light-marigold: #fcf0cc;
+$marigold: #fdbd02;
+$pale-mauve: #f4eaed;
+$light-mauve: #b9a2a9;
+$perrywinkle: #a8afe7;
+$dark-perrywikle: #6b73ab;
+$light-mushroom: #e7ccc6;
+$mushroom: #b3948d;
+$note-grey: #888d9c;
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   background-color: #ffffff;
   color: #333333;
@@ -131,12 +158,6 @@ nav img {
   }
 }
 
-.intro {
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 200px;
-}
-
 .cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -180,276 +201,344 @@ nav img {
   }
 }
 
-.front:hover {
+.front:hover,
+.front.hover_effect {
   box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.2),
     0px 30px 25px 0px rgba(0, 0, 0, 0.05);
   transform: translateY(-5px);
+}
+
+.hover {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .front:hover .back {
   opacity: 1;
 }
 
-.about a {
-  color: lightpink;
-  text-decoration: none;
+.front.hover_effect .back {
+  opacity: 1;
+}
+
+.intro {
+  text-align: center;
+  color: $note-grey;
+  width: 320px;
+  margin: 200px auto 60px;
+  h2 {
+    margin-top: 40px;
+    color: #444;
+  }
+}
+
+.visible-small {
+  display: none;
 }
 
 footer {
   text-align: center;
-  color: #dedede;
+  color: $note-grey;
   padding-top: 50px;
   font-size: 14px;
 }
 
 footer a {
-  color: lightpink;
+  color: $dark-baby-blue;
   text-decoration: none;
 }
 
-.about-background {
-  background: #ffddc0;
+.about-page {
+  background: #ffeae7;
+  nav img {
+    width: 120px;
+  }
+  footer {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .about-content {
-  margin-top: 100px;
   padding: 50px;
-  max-width: 400px;
-  color: #ffa37e;
+  max-width: 550px;
+  color: #f6a79a;
+  text-align: center;
+  margin: 25vh auto;
+  a {
+    color: $light-baby-blue;
+    text-decoration: none;
+  }
+  h2 {
+    color: #444;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-small {
+    display: none;
+  }
+  .visible-small {
+    display: block;
+  }
+  .intro img {
+    width: 80px;
+    cursor: pointer;
+  }
+  .about-page nav img {
+    width: 90px;
+  }
+  .logo img {
+    width: 210px;
+  }
+  .about-content {
+    margin: 25vh auto 0px;
+  }
 }
 
 /* Colors */
 
 .front-1 {
-  background-color: $light-sea;
-  color: $sea;
+  background-color: $light-teal;
+  color: $dark-teal;
   .back {
-    color: $light-sea;
-    background-color: $sea;
+    color: $light-teal;
+    background-color: $dark-teal;
   }
 }
 
 .front-2 {
-  background-color: $dark-salmon;
-  color: $salmon-green;
+  background-color: $light-salmone;
+  color: $dark-salmon;
   .back {
-    color: $dark-salmon;
-    background-color: $salmon-green;
+    color: $light-salmone;
+    background-color: $dark-salmon;
   }
 }
-
 .front-3 {
-  background-color: $pink-beige;
-  color: $light-beige;
+  background-color: $light-slate;
+  color: $dark-slate;
   .back {
-    color: $pink-beige;
-    background-color: $light-beige;
+    color: $light-slate;
+    background-color: $dark-slate;
   }
 }
-
 .front-4 {
-  background-color: $light-sage;
-  color: $dark-sage;
+  background-color: $sun-white;
+  color: $sun-yellow;
   .back {
-    color: $light-sage;
-    background-color: $dark-sage;
+    color: $sun-white;
+    background-color: $sun-yellow;
   }
 }
 
 .front-5 {
-  background-color: $marigold-salmon;
-  color: $salmon-marigold;
+  background-color: $light-violet;
+  color: $dark-violet;
   .back {
-    color: $marigold-salmon;
-    background-color: $salmon-marigold;
+    color: $light-violet;
+    background-color: $dark-violet;
   }
 }
 
 .front-6 {
-  background-color: $kahki-sand;
-  color: $sand-sky-kahki;
+  background-color: $light-grey-green;
+  color: $dark-grey-green;
   .back {
-    color: $kahki-sand;
-    background-color: $sand-sky-kahki;
+    color: $light-grey-green;
+    background-color: $dark-grey-green;
   }
 }
 .front-7 {
-  background-color: $blush;
-  color: $dark;
+  background-color: $light-baby-blue;
+  color: $dark-baby-blue;
   .back {
-    color: $blush;
-    background-color: $dark;
-  }
-}
-.front-8 {
-  background-color: $sky-sand-grey;
-  color: $sand-sky-kahki;
-  .back {
-    color: $sky-sand-grey;
-    background-color: $sand-sky-kahki;
+    color: $light-baby-blue;
+    background-color: $dark-baby-blue;
   }
 }
 
-.front-9 {
-  background-color: $green-salmon;
-  color: $salmon-green;
+.front-8 {
+  background-color: $pink-pale;
+  color: $pink-dusty;
   .back {
-    color: $green-salmon;
-    background-color: $salmon-green;
+    color: $pink-pale;
+    background-color: $pink-dusty;
   }
 }
-.front-10 {
-  background-color: $grey-sky;
-  color: $dusk-dirt;
+.front-9 {
+  background-color: $light-tan;
+  color: $dark-tan;
   .back {
-    color: $grey-sky;
-    background-color: $dusk-dirt;
+    color: $light-tan;
+    background-color: $dark-tan;
+  }
+}
+
+.front-10 {
+  background-color: $light-earth;
+  color: $earth;
+  .back {
+    color: $light-earth;
+    background-color: $earth;
   }
 }
 .front-11 {
-  background-color: $maize;
-  color: $light-maize;
+  background-color: $faded-pink;
+  color: $dusty-pink;
   .back {
-    color: $maize;
-    background-color: $light-maize;
+    color: $faded-pink;
+    background-color: $dusty-pink;
   }
 }
+
 .front-12 {
-  background-color: $navy-beige;
-  color: $beige-navy;
+  background-color: $light-forest;
+  color: $forest;
   .back {
-    color: $navy-beige;
-    background-color: $beige-navy;
+    color: $light-forest;
+    background-color: $forest;
   }
 }
 
 .front-13 {
-  background-color: $lilac-violet;
-  color: $violet-lilac;
+  background-color: $greyblue;
+  color: $dark-greyblue;
   .back {
-    color: $lilac-violet;
-    background-color: $violet-lilac;
+    color: $greyblue;
+    background-color: $dark-greyblue;
   }
 }
+
 .front-14 {
-  background-color: $rouge-rose;
-  color: $rose-rouge;
+  background-color: $pale-grey-blue;
+  color: $dark-grey-blue;
   .back {
-    color: $rouge-rose;
-    background-color: $rose-rouge;
+    color: $pale-grey-blue;
+    background-color: $dark-grey-blue;
   }
 }
 
 .front-15 {
-  background-color: $pink-steel;
-  color: $steel-pink;
+  background-color: $light-terracotta;
+  color: $dark-terracotta;
   .back {
-    color: $pink-steel;
-    background-color: $steel-pink;
+    color: $light-terracotta;
+    background-color: $dark-terracotta;
   }
 }
+
 .front-16 {
-  background-color: $baby-blue;
-  color: $baby-pink;
+  background-color: $silver-grey;
+  color: $dark-silver-grey;
   .back {
-    color: $baby-blue;
-    background-color: $baby-pink;
+    color: $silver-grey;
+    background-color: $dark-silver-grey;
   }
 }
 
 .front-17 {
-  background-color: $slate-mauve;
-  color: $mauve-slate;
+  background-color: $pale-salmon;
+  color: $dark-pale-salmon;
   .back {
-    color: $slate-mauve;
-    background-color: $mauve-slate;
+    color: $pale-salmon;
+    background-color: $dark-pale-salmon;
   }
 }
 .front-18 {
-  background-color: $peach-sand;
-  color: $sand-peach;
+  background-color: $light-sand;
+  color: $sand;
   .back {
-    color: $peach-sand;
-    background-color: $sand-peach;
+    color: $light-sand;
+    background-color: $sand;
   }
 }
+
 .front-19 {
-  background-color: $cobalt-silver;
-  color: $silver-cobolt;
+  background-color: $light-slate-grey;
+  color: $slate-grey;
   .back {
-    color: $cobalt-silver;
-    background-color: $silver-cobolt;
+    color: $light-slate-grey;
+    background-color: $slate-grey;
   }
 }
+
 .front-20 {
-  background-color: $marigold-salmon;
-  color: $ice-marigold;
+  background-color: $light-pinkish-tan;
+  color: $pinkish-tan;
   .back {
-    color: $marigold-salmon;
-    background-color: $ice-marigold;
+    color: $light-pinkish-tan;
+    background-color: $pinkish-tan;
   }
 }
 .front-21 {
-  background-color: $green-grey;
-  color: $grey-green;
+  background-color: $light-dusk;
+  color: $dusk-blue;
   .back {
-    color: $green-grey;
-    background-color: $grey-green;
+    color: $light-dusk;
+    background-color: $dusk-blue;
   }
 }
 .front-22 {
-  background-color: $sand-wine;
-  color: $wine-sand;
+  background-color: $light-grey-teal;
+  color: $grey-teal;
   .back {
-    color: $sand-wine;
-    background-color: $wine-sand;
+    color: $light-grey-teal;
+    background-color: $grey-teal;
   }
 }
 .front-23 {
-  background-color: $green-blue;
-  color: $blue-green;
+  background-color: $peach;
+  color: $dark-peach;
   .back {
-    color: $green-blue;
-    background-color: $blue-green;
+    color: $peach;
+    background-color: $dark-peach;
   }
 }
+
 .front-24 {
-  background-color: $baby-rose;
-  color: $rose-baby;
+  background-color: $dusty-rose;
+  color: $dark-rose;
   .back {
-    color: $baby-rose;
-    background-color: $rose-baby;
+    color: $dusty-rose;
+    background-color: $dark-rose;
   }
 }
+
 .front-25 {
-  background-color: $dusk-dirt;
-  color: $dirt-dusk;
+  background-color: $light-marigold;
+  color: $marigold;
   .back {
-    color: $dusk-dirt;
-    background-color: $dirt-dusk;
+    color: $light-marigold;
+    background-color: $marigold;
   }
 }
+
 .front-26 {
-  background-color: $pink-dust;
-  color: $dust-pink;
+  background-color: $pale-mauve;
+  color: $light-mauve;
   .back {
-    color: $pink-dust;
-    background-color: $dust-pink;
+    color: $pale-mauve;
+    background-color: $light-mauve;
   }
 }
+
 .front-27 {
-  background-color: $marigold-salmon;
-  color: $ice-marigold;
+  background-color: $perrywinkle;
+  color: $dark-perrywikle;
   .back {
-    color: $marigold-salmon;
-    background-color: $ice-marigold;
+    color: $perrywinkle;
+    background-color: $dark-perrywikle;
   }
 }
+
 .front-28 {
-  background-color: $marigold-salmon;
-  color: $ice-marigold;
+  background-color: $light-mushroom;
+  color: $mushroom;
   .back {
-    color: $marigold-salmon;
-    background-color: $ice-marigold;
+    color: $light-mushroom;
+    background-color: $mushroom;
   }
 }
